@@ -1,0 +1,171 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import "bootstrap";
+@import "bootstrap/theme";
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1024px !important;
+  }
+}
+
+body {
+	background-image: url(/assets/bkgrnd.jpg);
+}
+
+/* header */
+div.topbar {
+	padding-bottom: 10px;
+	background-color: #255932 !important;
+	background: linear-gradient(top, #255932 0%, #588c65 100%);  
+	background: -moz-linear-gradient(top, #255932 0%, #588c65 100%); 
+	background: -webkit-linear-gradient(top, #255932 0%,#588c65 100%); 
+}
+
+
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.top-strip {
+	margin-top: 15px;
+	width: 100%;
+}
+
+menu {
+	padding-left: 0px;
+	font-size: 12px;
+}
+
+menu > ul {
+	display: table;
+	width: 100%;
+	margin: 1px auto; 
+	text-align: center;
+}
+
+menu ul ul {
+	display: none;
+}
+
+	menu ul li:hover > ul {
+		display: block;
+		z-index: 1;
+	}
+
+
+menu ul {
+	background: #255932; 
+	background: linear-gradient(top, #255932 0%, #588c65 100%);  
+	background: -moz-linear-gradient(top, #255932 0%, #588c65 100%); 
+	background: -webkit-linear-gradient(top, #255932 0%,#588c65 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 10px;
+	border-radius: 1px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+	menu ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+	menu ul li {
+		float: left;
+	}
+		menu ul li:hover {
+			background: #255932;
+			background: linear-gradient(top, #255932 0%, #588c65 40%);
+			background: -moz-linear-gradient(top, #255932 0%, #588c65 40%);
+			background: -webkit-linear-gradient(top, #255932 0%,#588c65 40%);
+		}
+			menu ul li:hover a {
+				color: #fff;
+			}
+		
+		menu ul li a {
+			display: block; 
+			padding: 10px 20px;
+			color: #fff; text-decoration: none;
+		}
+			
+		
+	menu ul ul {
+		background: #006400; border-radius: 0px; padding: 0;
+		position: absolute; top: 100%;
+	}
+		menu ul ul li {
+			float: none; 
+			border-top: 1px solid #6b727c;
+			border-bottom: 1px solid #575f6a; position: relative;
+		}
+			menu ul ul li a {
+				text-align: left;
+				padding: 5px 20px;
+				color: #222;
+			}	
+				menu ul ul li a:hover {
+					background: #6B8E23;
+				}
+		
+	menu ul ul ul {
+		position: absolute; left: 100%; top:0;
+	}
+
+#wrapper {
+	overflow: hidden;
+}
+		
+#main {
+	margin-top:100px;
+}
+
+#sidebar {
+	background: #366a43;
+	color: white;
+	padding-left: 10px;	
+	margin-bottom: -5000px; /* any large number will do */
+  padding-bottom: 5000px;
+}
+
+#sidebar ul {
+	padding-left: 5px;
+	list-style: none;
+	font-size: 12px;
+
+}
+
+#content {
+	padding-top: 10px;
+	background: #fff;
+	padding-bottom: 50px;
+}
+
+.cn {
+	font-weight: bold;
+	color: maroon;
+}
+
+#footer {
+	height: 60px;
+	clear: both;
+  .credit {
+    padding: 20px 15px;
+  }
+}

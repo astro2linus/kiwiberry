@@ -20,9 +20,25 @@
   <%= link_to image_tag("bl_aisles_strip_h.jpg", alt: "...", class: "top-strip"), 'http://rubyonrails.org/' %>
   <%= render 'navbar' %>
 </div>
-<div class="container">
-  <%= yield %>
-  <%= render 'layouts/footer' %>
+<div id="wrapper" class="container">
+  <div id="sidebar" class="col-md-2">
+    <h4>The Home of:</h4>
+    <ul>
+      <li>
+        Kiwi Berry Organics Co.
+      </li>
+      <li>
+        Kiwi Berry Direct
+      </li>
+      <li>
+        Kiwi Korners Farm
+      </li>
+    </ul>
+  </div>
+  <div id="content" class="col-md-10">
+    <%= yield %>
+  </div>
 </div>
+<%= render 'layouts/footer' %>
 </body>
 </html>

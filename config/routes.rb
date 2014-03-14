@@ -1,4 +1,33 @@
 Kiwiberry::Application.routes.draw do
+  get "/home" => "static_pages#home"
+  get "/kbo_co" => "static_pages#kbo_co"
+    get "/pack_distribute" => "static_pages#pack_distribute"
+  get "/organic_certification" => "static_pages#organic_certification"
+  get "/kiwi_berries" => "static_pages#kiwi_berries"
+  get "/poppers" => "static_pages#poppers"
+  get "/annas" => "static_pages#annas"
+
+  get "/nutrition" => "static_pages#nutrition"
+
+  get "/ripen_eat" => "static_pages#ripen_eat"
+  get "/consumer_education" => "static_pages#consumer_education"
+
+  get "/kiwi_berry_direct" => "static_pages#kiwi_berry_direct"
+
+  get "/kiwi_korners" => "static_pages#kiwi_korners"
+  get "/management_systems" => "static_pages#management_systems"
+  get "/kiwi_crew" => "static_pages#kiwi_crew"
+  get "/kiwi_videos" => "static_pages#kiwi_videos"
+
+  get "/about" => "static_pages#about"
+  get "/consumer_comments" => "static_pages#consumer_comments"
+  get "/outreach" => "static_pages#outreach"
+  get "/articles" => "static_pages#articles"
+  get "/links" => "static_pages#links"
+
+  get "/contact" => "static_pages#contact"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
