@@ -1,4 +1,5 @@
 Kiwiberry::Application.routes.draw do
+  root 'static_pages#home'
   get "/home" => "static_pages#home"
   get "/kbo_co" => "static_pages#kbo_co"
     get "/pack_distribute" => "static_pages#pack_distribute"
